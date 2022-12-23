@@ -1,32 +1,46 @@
 <template>
-	<div class="container space-between">
-		<div class="logo"></div>
-		<div id="nav">
-    <router-link to="/">Home</router-link> 
-    <router-link to="/">Projects</router-link> 
-		<router-link to="/">Services</router-link> 
-		<router-link to="/">Blog</router-link> 
-		<router-link to="/">Company</router-link> 
-  </div>
-	<div class="links space-between">
-		<a href="#" class="link-border">
-			<div class="link-icon inst"></div>
-		</a>
-		<a href="#" class="link-border">
-			<div class="link-icon twitter"></div>
-		</a>
-		<a href="#" class="link-border">
-			<div class="link-icon ref"></div>
-		</a>
+	<div class="navigation">
+		<div class="container space-between style-nav">
+			<div class="logo"></div>
+			<nav id="nav">
+				<router-link to="/" class="nav__route">Home</router-link> 
+				<router-link to="/projects" class="nav__route">Projects</router-link> 
+				<router-link to="/services" class="nav__route">Services</router-link> 
+				<router-link to="/blog" class="nav__route">Blog</router-link> 
+				<router-link to="/company" class="nav__route">Company</router-link> 
+			</nav>
+			<div class="links space-between">
+				<a href="#" class="link-border">
+					<div class="link-icon inst"></div>
+				</a>
+				<a href="#" class="link-border">
+					<div class="link-icon twitter"></div>
+				</a>
+				<a href="#" class="link-border">
+					<div class="link-icon ref"></div>
+				</a>
+			</div>
+		</div>
 	</div>
-	</div>
-	
 </template>
 
 <style>
 
 #nav {
 	max-width: 475px;
+}
+
+.container.style-nav {
+	padding: 22px 30px 28px;
+	border-bottom: 1px solid #FFFFFF1A;
+}
+
+.nav__route {
+	padding: 8px 15px;
+}
+
+.router-nav:not(:last-child) {
+	margin-right: 20px;
 }
 
 .space-between {
@@ -46,6 +60,10 @@
 
 .links {
 	max-width: 110px;
+}
+
+.links a:not(:last-child) { 
+	margin-right: 10px;
 }
 
 .link-icon {
