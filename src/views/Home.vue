@@ -5,6 +5,7 @@
 	</div>
 	<main-request></main-request>
 	<main-works></main-works>
+	<main-about></main-about>
 </template>
 
 <style scoped>
@@ -23,6 +24,7 @@ import Navigation from '../components/Navigation.vue';
 import MainSlider from '../components/main/MainSlider.vue';
 import MainRequest from '../components/main/MainRequest.vue';
 import MainWorks from '../components/main/MainWorks.vue';
+import MainAbout from '../components/main/MainAbout.vue';
 
 export default {
   name: 'Home',
@@ -31,6 +33,7 @@ export default {
 		Navigation,
 		MainRequest,
 		MainWorks,
+		MainAbout,
 	}
 }
 </script>

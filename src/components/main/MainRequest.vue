@@ -17,6 +17,7 @@
 			<p class="request__title">Call us or leave a request from the site.
 				We will call you back within 10 minutes.</p>
 			<p class="request__phone">+48 (525) 282 547</p>
+			<!-- тут нужно сделать форму открытия модалки, создала для этого пока пустой компонент Request -->
 			<button class="request__apply">Apply Now</button>
 		</div>
 	</div>

@@ -21,8 +21,9 @@ a {
     text-decoration: none;
 }
 
-p {
+p, ul {
 	margin: 0;
+	padding: 0;
 }
 
 button {
@@ -104,4 +105,31 @@ button {
 .active {
 	background: rgba(196, 196, 196, 0.2);
 	border-radius: 0px 5px;
+}
+
+.slash-headlines {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 800;
+  line-height: 170%;
+  
+}
+
+.headlines {
+	font-size: 29px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.orange {
+	color: #F88500;
+}
+
+.dark {
+	color: #333333;
+}
+
+.flex-horizontal {
+	display: flex;
+	justify-content: space-between;
 }
