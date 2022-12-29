@@ -10,8 +10,8 @@
 						to be content with ready-made solutions.</p>
 				</li>
 				<li class="block-2">
-					<p class="footer__headline">Menu</p>
-					<ul>
+					<p class="footer__headline headline_margin">Menu</p>
+					<ul class="footer__items">
 						<li>Home</li>
 						<li>Projects</li>
 						<li>Services</li>
@@ -20,8 +20,8 @@
 					</ul>
 				</li>
 				<li class="block-3">
-					<p class="footer__headline">Services</p>
-					<ul>
+					<p class="footer__headline headline_margin">Services</p>
+					<ul class="footer__items">
 						<li>Interior Design</li>
 						<li>Design</li>
 						<li>Wood supply</li>
@@ -30,20 +30,20 @@
 					</ul>
 				</li>
 				<li class="block-4">
-					<p class="footer__headline">Social media</p>
-					<p class="footer__content">Follow us on social media so you don't miss out on new incredible projects designed for our clients around the world.</p>
-					<ul>
-						<li>
+					<p class="footer__headline headline_margin">Social media</p>
+					<p class="footer__content" style="margin-bottom: 35px">Follow us on social media so you don't miss out on new incredible projects designed for our clients around the world.</p>
+					<ul class="public-links footer__links">
+						<li class="public-link">
 							<a href="#">
 								<img src="../images/inst.svg" alt="">
 							</a>
 						</li>
-						<li>
+						<li class="public-link">
 							<a href="#">
 								<img src="../images/twitter.svg" alt="">
 							</a>
 						</li>
-						<li>
+						<li class="public-link">
 							<a href="#">
 								<img src="../images/ref.svg" alt="">
 							</a>
@@ -57,6 +57,7 @@
 
 <style>
 .footer {
+	background: #171A1A;
 	padding-top: 70px;
 	padding-bottom: 100px;
 }
@@ -95,6 +96,35 @@
 	max-width: 285px;
 	width: 100%;
 }
+
+.headline_margin {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.headline_margin::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 25px;
+	height: 5px;
+	background: #F88500;
+	border-radius: 0px 5px;
+}
+
+.footer__items li {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+.footer__links {
+	max-width: 150px;
+	width: 100%;
+}
+
 </style>
 
 <script>

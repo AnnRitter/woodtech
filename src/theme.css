@@ -133,3 +133,28 @@ button {
 	display: flex;
 	justify-content: space-between;
 }
+
+.public-links {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.public-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 0px 5px;
+}
+
+.link-30 {
+	width: 30px;
+	height: 30px;
+}
+
+.gap-10 {
+	gap: 10px;
+}

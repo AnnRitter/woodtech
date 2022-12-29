@@ -9,17 +9,23 @@
 				<router-link to="/blog" class="nav__route">Blog</router-link> 
 				<router-link to="/company" class="nav__route">Company</router-link> 
 			</nav>
-			<div class="links space-between">
-				<a href="#" class="link-border">
-					<div class="link-icon inst"></div>
-				</a>
-				<a href="#" class="link-border">
-					<div class="link-icon twitter"></div>
-				</a>
-				<a href="#" class="link-border">
-					<div class="link-icon ref"></div>
-				</a>
-			</div>
+			<ul class="public-links gap-10">
+				<li class="public-link link-30">
+					<a href="#">
+						<img src="../images/inst.svg" alt="">
+					</a>
+				</li>
+				<li class="public-link link-30">
+					<a href="#">
+						<img src="../images/twitter.svg" alt="">
+					</a>
+				</li>
+				<li class="public-link link-30">
+					<a href="#">
+						<img src="../images/ref.svg" alt="">
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
@@ -64,24 +70,6 @@
 
 .links a:not(:last-child) { 
 	margin-right: 10px;
-}
-
-.link-icon {
-	width: 12px;
-	height: 12px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.link-border {
-	width: 30px;
-	height: 30px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 0px 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .inst {
