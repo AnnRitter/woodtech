@@ -1,7 +1,7 @@
 <template>
 	<div class="partner">
 		<div class="container">
-			<h3 class="partner__title">Our partners</h3>
+			<h3 class="partner__title hd-main-page">Our partners</h3>
 			<ul class="partner__list">
 				<li>
 					<img src="../../images/milano.svg" alt="milano" class="partner__photo">
@@ -24,7 +24,7 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 .partner {
 	width: 100%;
 	height: auto;
@@ -37,9 +37,6 @@
 }
 
 .partner__title {
-	font-weight: 800;
-	font-size: 29px;
-	
 	margin-bottom: 45px;
 }
 

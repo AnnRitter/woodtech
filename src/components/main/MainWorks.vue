@@ -2,13 +2,13 @@
 	<div class="works">
 		<div class="container">
 			<div class="works__titles">
-				<p class="works__main-title">We present you the best projects developed by our team of professionals with love and care for customers.
+				<p class="works__main-title common-text">We present you the best projects developed by our team of professionals with love and care for customers.
 				 The portfolio will allow you to choose 
 				the style, wood color, texture, design and arrangement of
 				 elements that interest you.</p> 
 				<div class="works__headlines">
 					<p class="slash-headlines orange">\\Best works</p>
-					<p class="headlines">We create a warm atmosphere for your holiday</p>
+					<p class="hd-main-page">We create a warm atmosphere for your holiday</p>
 				</div>
 			</div>
 			<ul class="works__projects">
@@ -28,16 +28,17 @@
 					<p class="works__description">Cozy loft in light wood tones and stunning views</p>
 				</li>
 			</ul>
-			<button class="works__apply">Show more</button>
+			<button class="works__apply orange-button">Show more</button>
 		</div>
 	</div>
 </template>
 
-<style>
+<style scoped>
 .works {
 	padding-top: 63px;
 	padding-bottom: 76px;
 	position: relative;
+	z-index: 2;
 }
 
 .works::after {
@@ -60,8 +61,6 @@
 .works__main-title {
 	max-width: 513px;
 	width: 100%;
-	font-size: 14px;
-	font-weight: 400;
 	text-align: right;
 	text-transform: uppercase;
 	line-height: 170%;
@@ -139,11 +138,10 @@
 
 
 .works__apply {
-	max-width: 136px;
-	width: 100%;
-	height: 44px;
-	background: #F88500;
-	border-radius: 0px 5px;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 145%;
+	padding: 12px 30px;
 }
 </style>
 

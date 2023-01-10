@@ -1,5 +1,6 @@
 <template>
-	<div class="background">
+	<div class="main">
+		<div class="background">
 		<navigation></navigation>
 		<main-slider></main-slider>
 	</div>
@@ -9,16 +10,23 @@
 	<main-partners></main-partners>
 	<main-blog></main-blog>
 	<the-footer></the-footer>
+	</div>
+	
 </template>
 
 <style scoped>
+.main {
+	background-color: #202328;
+	color: #fff;
+	padding-top: 20px;
+}
 .background {
 	background-image: url('../images/slider-img.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 10px;
-	margin-bottom: 20px;
+	margin: 0px 10px 20px;
 }
 </style>
 

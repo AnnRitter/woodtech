@@ -14,18 +14,18 @@
 			</ul>
 		</div>
 		<div class="left-part">
-			<p class="request__title">Call us or leave a request from the site.
+			<p class="request__title common-text">Call us or leave a request from the site.
 				We will call you back within 10 minutes.</p>
 			<p class="request__phone">+48 (525) 282 547</p>
 			<!-- тут нужно сделать форму открытия модалки, создала для этого пока пустой компонент Request -->
-			<button class="request__apply">Apply Now</button>
+			<button class="request__apply orange-button">Apply Now</button>
 		</div>
 	</div>
 	</div>
 	
 </template>
 
-<style>
+<style scoped>
 .request {
 	padding-top: 54px;
 	padding-bottom: 54px;
@@ -63,8 +63,6 @@
 .request__title {
 	max-width: 330px;
 	width: 100%;
-	font-weight: 400;
-	font-size: 14px;
 	text-transform: uppercase;
 	text-align: end;
 	line-height: 165%;
@@ -81,12 +79,9 @@
 
 .request__apply {
 	padding: 12px 30px;
-	background: #F88500;
-	border-radius: 0px 5px;
 	font-size: 20px;
 	font-weight: 400;
 	text-transform: uppercase;
-
 }
 </style>
 

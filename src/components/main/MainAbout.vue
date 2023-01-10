@@ -1,30 +1,30 @@
 <template>
 	<div class="about">
-		<div class="container flex-horizontal" style="gap: 80px">
+		<div class="container flex-horizontal about__main">
 			<div class="about__photo">
 				<img src="../../images/photo_title.jpg" alt="">
-				<p class="about__year"><span style="font-size: 52px">32</span>  years on the market</p>
+				<p class="about__year"><span>32</span>  years on the market</p>
 			</div>
-			<div class="about__content">
-				<p class="slash-headlines orange" style="margin-bottom: 20px">\\briefly about us</p>
-				<p class="headlines dark about__headline">We design and create eco-friendly comfort</p>
-				<p class="about__text" style="margin-bottom: 40px">In our work, we use only the best materials on the market at affordable prices.
+			<div>
+				<p class="slash-headlines orange about__slash-title">\\briefly about us</p>
+				<p class="hd-main-page dark about__headline">We design and create eco-friendly comfort</p>
+				<p class="dark common-text about__desc">In our work, we use only the best materials on the market at affordable prices.
 					 Our experts will select the most suitable wood species,
 					  design specialists will develop a ready-made solution.</p>
 				<ul class="about__list">
 					<li>
 						<p class="about__subtitle dark">Safe <br> materials</p>
-						<p class="about__text about__subtitle-text">The safety of each of the materials used is confirmed by the relevant 
+						<p class="dark common-text about__subtitle-text">The safety of each of the materials used is confirmed by the relevant 
 							certificate of the European standard. We use products only from brands
 							 that have been proven over the years.</p>
-						 <a href="" class="about__link dark">More</a>
+						 <a href="" class="link-more dark">More</a>
 					</li>
 					<li>
 						<p class="about__subtitle dark">Quality <br> wood</p>
-						<p class="about__text about__subtitle-text">In creating unique interiors, we use only high-quality, proven European 
+						<p class="dark common-text about__subtitle-text">In creating unique interiors, we use only high-quality, proven European 
 							wood, which will serve you for many years, retaining its qualities and 
 							impeccable appearance.</p>
-						<a href=""  class="about__link dark">More</a>
+						<a href=""  class="link-more dark">More</a>
 					</li>
 				</ul>
 			</div>
@@ -32,11 +32,16 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 .about {
 	background: #fff;
 	padding-top: 90px;
 	padding-bottom: 85px;
+	text-align: start;
+}
+
+.about__main {
+	gap: 80px;
 }
 
 .about__photo {
@@ -61,6 +66,10 @@
 	border-radius: 0px 5px;
 }
 
+.about__slash-title {
+	margin-bottom: 20px;
+}
+
 .about__year {
 	z-index: 3;
 	position: absolute;
@@ -73,14 +82,19 @@
 	font-size: 21px;
 }
 
-.about__content {
-	text-align: start;
+.about__year span {
+	font-size: 52px;
 }
 
 .about__headline {
 	padding-bottom: 20px;
 	margin-bottom: 30px;
 	position: relative;
+	text-transform: uppercase;
+}
+
+.about__desc {
+	margin-bottom: 40px;
 }
 
 .about__headline::after {
@@ -96,14 +110,7 @@
 	background-repeat: no-repeat;
 }
 
-.about__text {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 170%;
-	color: #333333;
- }
-
- .about__list {
+.about__list {
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
@@ -134,12 +141,6 @@
 
 .about__subtitle-text {
 	padding-bottom: 15px;
-}
-
-.about__link {
-	font-size: 15px;
-	font-weight: 800;
-	text-decoration-line: underline;
 }
 </style>
 

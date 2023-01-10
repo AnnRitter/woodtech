@@ -2,15 +2,15 @@
 	<div class="footer">
 		<div class="container">
 			<ul class="footer__blocks">
-				<li class="block-1">
+				<li class="footer__block-content">
 					<img src="../images/Logo.png" alt="" class="footer__logo">
 					<p class="footer__headline">Briefly about us</p>
 					<p class="footer__content">We thoroughly study and then discuss with our customers the appearance of each product. 
 						We rarely repeat ourselves, because we know that you value individuality and are not ready 
 						to be content with ready-made solutions.</p>
 				</li>
-				<li class="block-2">
-					<p class="footer__headline headline_margin">Menu</p>
+				<li>
+					<p class="footer__headline footer__menu-headline">Menu</p>
 					<ul class="footer__items">
 						<li>Home</li>
 						<li>Projects</li>
@@ -19,8 +19,8 @@
 						<li></li>
 					</ul>
 				</li>
-				<li class="block-3">
-					<p class="footer__headline headline_margin">Services</p>
+				<li>
+					<p class="footer__headline footer__menu-headline">Services</p>
 					<ul class="footer__items">
 						<li>Interior Design</li>
 						<li>Design</li>
@@ -29,9 +29,9 @@
 						<li>Concept</li>
 					</ul>
 				</li>
-				<li class="block-4">
-					<p class="footer__headline headline_margin">Social media</p>
-					<p class="footer__content" style="margin-bottom: 35px">Follow us on social media so you don't miss out on new incredible projects designed for our clients around the world.</p>
+				<li class="footer__block-menu">
+					<p class="footer__headline footer__menu-headline">Social media</p>
+					<p class="footer__content footer__content-margin">Follow us on social media so you don't miss out on new incredible projects designed for our clients around the world.</p>
 					<ul class="public-links footer__links">
 						<li class="public-link">
 							<a href="#">
@@ -65,7 +65,7 @@
 .footer__blocks {
 	display: flex;
 	justify-content: space-between;
-
+	text-align: start;
 }
 .footer__logo {
 	margin-bottom: 40px;
@@ -79,38 +79,42 @@
 	padding-bottom: 20px;
 }
 
+.footer__menu-headline {
+	
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.footer__menu-headline::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	height: 5px;
+	background: #F88500;
+	border-radius: 0px 5px;
+}
+
 .footer__content {
 	font-size: 13px;
 	line-height: 170%;
 	text-transform: uppercase;
 	color: #FFFFFFB2;
-
 }
 
-.block-1 {
+.footer__content-margin {
+	margin-bottom: 35px;
+}
+
+.footer__block-content {
 	max-width: 345px;
 	width: 100%;
 }
 
-.block-4 {
+.footer__block-menu {
 	max-width: 285px;
 	width: 100%;
-}
-
-.headline_margin {
-	margin-bottom: 20px;
-	position: relative;
-}
-
-.headline_margin::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 25px;
-	height: 5px;
-	background: #F88500;
-	border-radius: 0px 5px;
 }
 
 .footer__items li {
