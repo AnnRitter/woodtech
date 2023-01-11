@@ -1,7 +1,7 @@
 <template>
 	<div class="main">
 		<div class="background">
-		<navigation></navigation>
+		<navigation theme="light"></navigation>
 		<main-slider></main-slider>
 	</div>
 	<main-request></main-request>

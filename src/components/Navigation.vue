@@ -1,5 +1,5 @@
 <template>
-	<div class="navigation">
+	<div class="navigation" :class="type">
 		<div class="container space-between style-nav">
 			<div class="logo"></div>
 			<nav id="nav">
@@ -11,17 +11,17 @@
 			</nav>
 			<ul class="public-links gap-10">
 				<li class="public-link link-30">
-					<a href="#">
+					<a href="#" class="nav__img img-1">
 						<img src="../images/inst.svg" alt="">
 					</a>
 				</li>
 				<li class="public-link link-30">
-					<a href="#">
+					<a href="#" class="nav__img img-2">
 						<img src="../images/twitter.svg" alt="">
 					</a>
 				</li>
 				<li class="public-link link-30">
-					<a href="#">
+					<a href="#" class="nav__img img-3">
 						<img src="../images/ref.svg" alt="">
 					</a>
 				</li>
@@ -30,10 +30,49 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 
 #nav {
 	max-width: 475px;
+}
+
+.dark a {
+	color: #333333;
+}
+
+.dark {
+	box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.dark a.active {
+	background: #F88500;
+	color: #fff;
+}
+
+.dark .logo {
+	background-image: url('../images/logo-dark.svg');
+}
+
+.dark .public-link  {
+	border: 1px solid #33333380;
+}
+
+.dark .nav__img {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.dark .img-1 {
+	background-image: url('../images/inst-dark.svg');
+}
+
+.dark .img-2 {
+	background-image: url('../images/twitter-dark.svg');
+}
+
+.dark .img-3 {
+	background-image: url('../images/facebook-dark.svg');
 }
 
 .container.style-nav {
@@ -45,7 +84,7 @@
 	padding: 8px 15px;
 }
 
-.router-nav:not(:last-child) {
+.nav__route:not(:last-child) {
 	margin-right: 20px;
 }
 
@@ -87,6 +126,13 @@
 
 <script>
 export default {
-
+	data() {
+		return {
+			type: this.theme
+		}
+	},
+	props: {
+		theme: String,
+	}
 }
 </script>

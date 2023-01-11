@@ -60,6 +60,7 @@
 	background: #171A1A;
 	padding-top: 70px;
 	padding-bottom: 100px;
+	color: #fff;
 }
 
 .footer__blocks {

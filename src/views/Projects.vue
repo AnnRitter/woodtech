@@ -1,5 +1,5 @@
 <template>
- <navigation></navigation>
+ <navigation theme="dark"></navigation>
  <project-projects></project-projects>
  <the-footer></the-footer>
 </template>
