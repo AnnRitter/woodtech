@@ -1,6 +1,6 @@
 <template>
 	<div class="request">
-		<div class="container space-between">
+		<div class="container flex-horizontal">
 		<div class="right-part">
 			<h2 class="request__h2">We are trusted</h2>
 			<ul class="request__list">
@@ -18,11 +18,13 @@
 				We will call you back within 10 minutes.</p>
 			<p class="request__phone">+48 (525) 282 547</p>
 			<!-- тут нужно сделать форму открытия модалки, создала для этого пока пустой компонент Request -->
-			<button class="request__apply orange-button">Apply Now</button>
+			<button class="request__apply orange-button" @click="modal = true">Apply Now</button>
 		</div>
 	</div>
 	</div>
-	
+	<teleport to="body">
+		<modal v-if="modal" @close="modal = false"></modal>
+	</teleport>
 </template>
 
 <style scoped>
@@ -82,12 +84,27 @@
 	font-size: 20px;
 	font-weight: 400;
 	text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.request__apply:hover {
+	background: transparent;
+	box-shadow: 0 0 10px 0 #F88500 inset, 0 0 10px 4px #F88500;
 }
 </style>
 
 <script>
-
+import Modal from '../Modal.vue';
 export default {
-
+data() {
+	return {
+		modal: false
+	}
+},
+components: {
+	Modal
+}
 }
 </script>

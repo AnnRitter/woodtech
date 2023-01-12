@@ -17,14 +17,14 @@
 						<p class="dark common-text about__subtitle-text">The safety of each of the materials used is confirmed by the relevant 
 							certificate of the European standard. We use products only from brands
 							 that have been proven over the years.</p>
-						 <a href="" class="link-more dark">More</a>
+						 <router-link to="/company" class="link-more dark">More</router-link> 
 					</li>
 					<li>
 						<p class="about__subtitle dark">Quality <br> wood</p>
 						<p class="dark common-text about__subtitle-text">In creating unique interiors, we use only high-quality, proven European 
 							wood, which will serve you for many years, retaining its qualities and 
 							impeccable appearance.</p>
-						<a href=""  class="link-more dark">More</a>
+							<router-link to="/company" class="link-more dark">More</router-link> 
 					</li>
 				</ul>
 			</div>

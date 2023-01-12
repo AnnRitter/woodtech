@@ -59,6 +59,11 @@
 
 .partner__photo {
 	margin-bottom: 30px;
+	transition: .5s;
+}
+
+.partner__photo:hover {
+	transform: scale(1.1); 
 }
 </style>
 

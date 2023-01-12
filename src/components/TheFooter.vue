@@ -12,21 +12,41 @@
 				<li>
 					<p class="footer__headline footer__menu-headline">Menu</p>
 					<ul class="footer__items">
-						<li>Home</li>
-						<li>Projects</li>
-						<li>Services</li>
-						<li>Blog</li>
-						<li></li>
+						<li>
+							<router-link to="/">Home</router-link> 
+						</li>
+						<li>
+							<router-link to="/projects">Projects</router-link> 
+						</li>
+						<li>
+							<router-link to="/services">Services</router-link> 
+						</li>
+						<li>
+							<router-link to="/blog">Blog</router-link>  
+						</li>
+						<li>
+							<router-link to="/company">Company</router-link>  
+						</li>
 					</ul>
 				</li>
 				<li>
 					<p class="footer__headline footer__menu-headline">Services</p>
 					<ul class="footer__items">
-						<li>Interior Design</li>
-						<li>Design</li>
-						<li>Wood supply</li>
-						<li>Repair</li>
-						<li>Concept</li>
+						<li>
+							<a href="#">Interior Design</a>
+						</li>
+						<li>
+							<a href="#">Design</a>
+						</li>
+						<li>
+							<a href="#">Wood supply</a>
+						</li>
+						<li>
+							<a href="#">Repair</a>
+						</li>
+						<li>
+							<a href="#">Concept</a>
+						</li>
 					</ul>
 				</li>
 				<li class="footer__block-menu">

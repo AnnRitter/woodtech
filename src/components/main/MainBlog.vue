@@ -49,6 +49,11 @@
 	padding: 15px;
 	border: 1px solid #EEEEEE;
 	text-align: start;
+	transition: .5s;
+}
+
+.blog__item:hover {
+	transform: scale(1.05); 
 }
 
 .blog__photo {

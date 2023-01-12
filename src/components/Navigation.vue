@@ -1,7 +1,7 @@
 <template>
 	<div class="navigation" :class="type">
 		<div class="container space-between style-nav">
-			<div class="logo"></div>
+		<router-link to="/" class="logo"></router-link>
 			<nav id="nav">
 				<router-link to="/" class="nav__route">Home</router-link> 
 				<router-link to="/projects" class="nav__route">Projects</router-link> 
@@ -88,6 +88,15 @@
 	margin-right: 20px;
 }
 
+.nav__route:hover {
+	background: rgba(196, 196, 196, 0.2);
+	border-radius: 0px 5px;
+}
+
+.dark .nav__route:hover {
+	background: #F88500;
+	color: #fff;
+}
 .space-between {
 	display: flex;
 	justify-content: space-between;

@@ -12,23 +12,23 @@
 				</div>
 			</div>
 			<ul class="works__projects">
-				<li>
+				<li class="works__item">
 					<img src="../../images/photo_1.jpg" alt="">
 					<p class="works__city">London</p>
 					<p class="works__description">Contemporary living room in wood tones</p>
 				</li>
-				<li>
+				<li class="works__item">
 					<img src="../../images/photo_2.jpg" alt="">
 					<p class="works__city">Paris</p>
 					<p class="works__description">Panoramic chill-out area for reading and relaxing</p>
 				</li>
-				<li>
+				<li class="works__item">
 					<img src="../../images/photo_3.jpg" alt="">
 					<p class="works__city">Warsaw</p>
 					<p class="works__description">Cozy loft in light wood tones and stunning views</p>
 				</li>
 			</ul>
-			<button class="works__apply orange-button">Show more</button>
+			<router-link to="/projects" class="works__apply orange-button">Show more</router-link> 
 		</div>
 	</div>
 </template>
@@ -82,6 +82,14 @@
 	display: flex;
 	justify-content: center;
 	text-align: start;
+}
+
+.works__item {
+	transition: .5s;
+}
+
+.works__item:hover {
+	transform: scale(1.05); 
 }
 
 .works__projects li:not(:last-child) {
